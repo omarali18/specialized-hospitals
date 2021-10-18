@@ -9,7 +9,7 @@ const Footer = () => {
                     <h3 className="fst-normal">QUESTIONS? REQUESTS? </h3>
                 </div>
                 <div className="col-lg-6 col-md-6 col-12 col-sm-12 ">
-                    <h2 className="float-md-end float-sm-start"><button className="contact-btn job-offers">Contact us <i class="fas fa-arrow-right"></i></button></h2>
+                    <h2 className="float-md-end float-sm-start"><button className="contact-btn job-offers">Contact us <i className="fas fa-arrow-right"></i></button></h2>
                 </div>
             </div>
             <div className="row p-3 mx-auto footer-deatel">
@@ -17,7 +17,7 @@ const Footer = () => {
                     <h3 className="fw-light">THE HOSPITAL WELCOMES YOU 24/7</h3>
                     <p><small className="visits">Visits to hospitalized patients are authorized
                         under conditions and by appointment</small></p>
-                    <p><a className="visitor-information" href="#">Patient & visitor information <i class="fas fa-arrow-right"></i></a></p>
+                    <p><a className="visitor-information" href="#">Patient & visitor information <i className="fas fa-arrow-right"></i></a></p>
                     <h6>Find a physician</h6>
                     <button className="job-offers">Our job offers</button>
                 </div>
@@ -40,10 +40,10 @@ const Footer = () => {
                 </div>
                 <div className="social-media p-3 col-lg-3 col-md-6 col-12 col-sm-12">
                     <h3>OUR SOCIAL MEDIA</h3>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-facebook-square"></i>
+                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-youtube"></i>
+                    <i className="fab fa-linkedin"></i>
                 </div>
             </div>
         </div>

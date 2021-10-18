@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Short-Term Hospitalization",
+        "description": "In recent years, a growing amount of research has begun to focus on the oral microbiome due to its links with health and systemic disease. The oral microbiome has numerous advantages that make it particularly useful for clinical studies, including non-invasive collection, temporal stability, and lower complexity relative to other niches, such as the gut. Despite recent discoveries made in this area, it is unknown how the oral microbiome responds to short-term hospitalization.",
+        "img": "https://www.prairiemanorhealthcare.com/wp-content/uploads/2012/02/LHC_home3.jpg"
+    },
+    {
+        "id": 2,
+        "name": "24/7 Emergency Care",
+        "description": "The Emergency Department (ED) is staffed with a team of highly experienced physicians and nurses that are here for you 24/7. The ED is supported by 24-hour radiology, laboratory, and respiratory therapy services. We manage all types of major and minor emergencies. Walk-ins are welcome – appointment not necessary.",
+        "img": "https://windomareahealth.org/wp-content/uploads/2019/08/Windom_Ultrasound_Oct2016_9807.jpg"
+    },
+    {
+        "id": 3,
+        "name": "General and Specialty Surgical services",
+        "description": "A general surgeon is a specialist who is trained to manage a broad spectrum of surgical conditions affecting almost any area of the body. The surgeon establishes the diagnosis and provides the preoperative, operative, and post-operative care to patients and is often responsible for the comprehensive management of the trauma victim and the critically ill patient.",
+        "img": "https://www.stormontvail.org/wp-content/uploads/2019/04/SV__3837.jpg"
+    },
+    {
+        "id": 4,
+        "name": "x ray/radiology services",
+        "description": "Diagnostic radiology is the branch of medicine best known for taking and reading X-rays, and is the nucleus of almost every doctor’s diagnosis. Being able to detect disease sooner and pinpoint its location more accurately is a huge factor in stopping disease in its tracks. Because of the evolution of X-rays and the field of diagnostic radiology, medicine is being changed on a daily basis.",
+        "img": "https://nebula.wsimg.com/57a3db618f414d81324f0143150d59a8?AccessKeyId=B58CA59BEDE34828B766&disposition=0&alloworigin=1"
+    },
+    {
+        "id": 5,
+        "name": "Laboratory services",
+        "description": "Laboratory testing gives you and your doctor the information you need to make the best choices for your health. Rely on Community Hospital of the Monterey Peninsula for laboratory services that meet the highest standards for professionalism and deliver prompt, accurate results. A pathologist is a scientist who analyzes samples of body fluids like blood, urine, and tissue using a microscope, tests, and other tools.",
+        "img": "https://www.nipro-group.com/sites/default/files/styles/page_block_linkteaser/public/2019-12/Lab%20Services%20-%20shutterstock_233221729-LoRes.jpg?h=4f6f5ff0&itok=WwZFVrIt"
+    },
+    {
+        "id": 6,
+        "name": "Home Nursing services",
+        "description": "Thank you for considering Nursing Home Health Care in Dhaka. We are committed to the highest standards of care and professional ethics for our company as well as our clients, in order for our agency and staff to merit the respect of the community and our clients. The nurses in our organization are skilled, experienced and gentle. Nurses in our company are ready to provide 24 hour service at your home. We will provide you with affordable services to provide home care to a home healthcare client.",
+        "img": "https://3.imimg.com/data3/PN/FT/MY-1940339/home-nursing-services-500x500.jpg"
+    }
+]

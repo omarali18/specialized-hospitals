@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import Doctors from './components/Doctors/Doctors';
-import Header from './Header/Header';
+import Header from './components/Header/Header';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -19,6 +21,13 @@ function App() {
           <Route path="/doctors">
             <Header></Header>
             <Doctors></Doctors>
+          </Route>
+          <Route path="/service/:id">
+            <Header></Header>
+            <ServiceDetails></ServiceDetails>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>

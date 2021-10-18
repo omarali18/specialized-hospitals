@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Maj. Gen. Dr. H.R. Harun (Retd.)",
+        "location": "Dhanmondi",
+        "working": "Open Now",
+        "specialist": "Urologist",
+        "description": "Maj Gen Prof (Dr) HR Harun (Retd.) MBBS (Dha), FCPS (Bd), FRCS (Glasg.), FRCS (Edin.) Diploma",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 3,
+        "name": "Dr. Md. Faruk Hossain Mounshi",
+        "location": "Dhanmondi",
+        "working": "Open Now",
+        "specialist": "Urologist",
+        "description": "MBBS, MS (Urology), Advance Endoscopic & Laparoscopic Training in Singapore & Mumbai, Urologist",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 3,
+        "name": "Dr. Tanvir Ahmed Chowdhury",
+        "location": "Gulshan",
+        "working": "Open Now",
+        "specialist": "Urologist",
+        "description": "MBBS, BCS, FCPS (Urology), Urologist",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 4,
+        "name": "Prof. Dr. Salahuddin Kowser Biplob",
+        "location": "Dhanmondi",
+        "working": "Open Now",
+        "specialist": "Psychiatrists",
+        "description": "MBBS (Dhaka) M.Phil (Psychiatry), MD (Psychiatry),",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 5,
+        "name": "Dr. Ahasan Uddin Ahmed",
+        "location": "Dhanmondi",
+        "working": "Closed Now",
+        "specialist": "Psychiatrists",
+        "description": "MBBS, BCS (Health), MCPS (Psychiatry), FCPS (Psychiatry), Specialist-Psychiatry",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 6,
+        "name": "Dr. Liton Chandra Saha",
+        "location": "Gulshan",
+        "working": "Open Now",
+        "specialist": "Pediatrics",
+        "description": "MBBS, FCPS, PGIMER (Paediatrics), Child Specialist, Paediatrics",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 7,
+        "name": "Dr. Farhana Rahman",
+        "location": "Dhanmondi",
+        "working": "Closed Now",
+        "specialist": "Pediatrics",
+        "description": "MBBS, DCH, FCPS (Paediatrics), Child Specialist, Paediatrics",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/BD_Doctors-372x240.png"
+    },
+    {
+        "id": 8,
+        "name": "Dr. M. A. Afzal Bhuiyan",
+        "location": "Gulshan",
+        "working": "Open Now",
+        "specialist": "Pediatrics",
+        "description": "MBBS, DCH, MRCP, Specialist-Paediatrics",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    },
+    {
+        "id": 9,
+        "name": "MBBS, DCH, MRCP, Specialist-Paediatrics",
+        "location": "Dhanmondi",
+        "working": "Closed Now",
+        "specialist": "Pediatrics",
+        "description": "MBBS, FCPS, Specialist-Paediatric Cardiology",
+        "img": "https://bddoctorlist.com/wp-content/uploads/2017/04/Doctor_in_BD-372x240.png"
+    }
+]

@@ -1,0 +1,37 @@
+
+.codiv-container{
+    width: 50%;
+}
+.covid-title{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+}
+.covid-dris{
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+    color: gray;
+}
+.covid-dris span{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:540px) {
+    .codiv-container{
+        width: 100%;
+    }
+    .covid-title{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width:541px) and (max-width:850px) {
+    .codiv-container{
+        width: 100%;
+    }
+    .covid-title{
+        font-size: 30px;
+    }
+}

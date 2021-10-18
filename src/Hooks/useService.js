@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const useService = () => {
     const [services, setServices] = useState([]);
@@ -7,11 +7,9 @@ const useService = () => {
         fetch("fakeServices.json")
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setServices(data)
             })
     }, [])
-    console.log(services);
     return {
         services
     }

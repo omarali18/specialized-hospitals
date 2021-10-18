@@ -6,6 +6,7 @@ import Doctors from './components/Doctors/Doctors';
 import Header from './components/Header/Header';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/doctors">
             <Header></Header>
             <Doctors></Doctors>
+            <Footer></Footer>
           </Route>
           <Route path="/service/:id">
             <Header></Header>

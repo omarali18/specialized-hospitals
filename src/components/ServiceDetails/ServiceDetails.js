@@ -1,17 +1,23 @@
-import React from 'react';
-import { useParams } from 'react-router';
-import useService from '../../Hooks/useService';
+import React, { useEffect, useState } from 'react';
+// import { useParams } from 'react-router';
+
 
 const ServiceDetails = () => {
+    const [services, setServices] = useState([]);
+    // const id = useParams()
 
-    const id = useParams()
-    const { services } = useService()
-
-    console.log(services, id);
-
+    useEffect(() => {
+        // fetch("fakeServices.json")
+        fetch("fakeServices.json")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                setServices(data)
+            })
+    }, [])
     return (
         <div>
-            <h1>this is service details</h1>
+            <h1>this is doctors</h1>
         </div>
     );
 };

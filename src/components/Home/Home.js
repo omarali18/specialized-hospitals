@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Covid from '../../components/Covid/Covid';
 import Footer from '../Footer/Footer';
 import Banner from '../Banner/Banner';

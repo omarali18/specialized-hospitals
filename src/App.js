@@ -7,15 +7,13 @@ import Header from './Header/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Router>
         <Switch>
           <Route exact path="/">
-            <Header></Header>
             <Home></Home>
           </Route>
           <Route path="/home">
-            <Header></Header>
             <Home></Home>
           </Route>
           <Route path="/doctors">

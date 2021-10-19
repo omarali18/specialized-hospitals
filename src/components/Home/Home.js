@@ -15,7 +15,7 @@ const Home = () => {
             <Banner />
             <Covid />
             <div className="card-container">
-                <div className="row w-75 mx-auto">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 w-75 mx-auto">
                     {
                         services.map(service => <Services
                             key={service.id}

@@ -3,6 +3,11 @@
 .card-design{
     height: 700px;
     margin-bottom: 50px;
+    border-radius: 10px;
+}
+.card-design img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .description{
     text-align: justify;

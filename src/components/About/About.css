@@ -1,0 +1,31 @@
+
+
+.about-title{
+    background-color: #1F1F1F;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.about-title .about-to-home{
+    text-decoration: none;
+    color: white;
+}
+.about-title .dot{
+    font-weight: 900;
+}
+.about-details{
+    width: 70%;
+    margin-bottom: 50px;
+    
+}
+.about-details h4 span{
+    color: red;
+}
+.about-details h4{
+    text-align: center;
+    margin: 30px 0;
+}
+.about-details p{
+    text-align: justify;
+    color: gray;
+}

@@ -8,6 +8,8 @@ import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import Appointment from './components/Appointment/Appointment';
+import About from './components/About/About';
+import Pharmacy from './components/Pharmacy/Pharmacy';
 
 function App() {
   return (
@@ -23,6 +25,16 @@ function App() {
           <Route path="/doctors">
             <Header></Header>
             <Doctors></Doctors>
+            <Footer></Footer>
+          </Route>
+          <Route path="/about">
+            <Header></Header>
+            <About></About>
+            <Footer></Footer>
+          </Route>
+          <Route path="/pharmacy">
+            <Header></Header>
+            <Pharmacy></Pharmacy>
             <Footer></Footer>
           </Route>
           <Route path="/service/:id">

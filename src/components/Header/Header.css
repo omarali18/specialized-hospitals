@@ -1,6 +1,5 @@
 
 .nav-container{
-    /* margin-left: 60px; */
     width: 100%;
     height: 60px;
     background-color: tomato;
@@ -9,12 +8,6 @@
 }
 .nav-container nav{
     margin-right: 90px;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    /* display: flex;
-    flex-direction: column; */
-
-
 }
 
 .nav-container nav a{
@@ -30,7 +23,7 @@
     .nav-container{
         width: 100%;
         height: 250px;
-    background-color: rgb(144, 113, 107);
+    background-color: rgb(73, 67, 66);
         
     
     }
@@ -46,19 +39,14 @@
     .nav-container{
         width: 100%;
         height: 200px;
-        /* background-color: green; */
     }
     .nav-container nav{
         color: green;
         display: grid;
     grid-template-columns: 1fr;
-        /* display: flex;
-        flex-direction: column; */
-        /* justify-content: center; */
     }
     .nav-container nav a{
     
-        
         color: green;
         padding:15px;
         font-size: 20px;

@@ -1,0 +1,30 @@
+
+.pharmacy-container{
+
+    font-family: 'Raleway', sans-serif;
+}
+.pharmacy{
+    background-color: #F4F4F4;
+    padding: 20px 0;
+    text-align: center;
+}
+.pharmacy p{
+   margin-bottom: 0;
+}
+.pharmacy p small{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.465);
+   color: rgba(0, 0, 0, 0.465);
+}
+.pharmacy-details, .pharmacy-history{
+    width: 80%;
+}
+.pharmacy-details h1{
+   text-align: center;
+   padding-bottom: 20px;
+}
+@media only screen and (max-width:540px) {
+    .pharmacy-details, .pharmacy-history{
+        width: 95%;
+    }
+   
+}

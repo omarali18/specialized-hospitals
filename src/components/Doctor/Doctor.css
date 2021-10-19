@@ -3,6 +3,7 @@
 .doctor-card-design{
     height: 650px;
     margin-bottom: 50px;
+    border: 1px solid lightsalmon ;
 }
 .description{
     text-align: justify;

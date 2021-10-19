@@ -14,5 +14,7 @@
 .card-btn button{
     padding:10px;
     width: 150px;
+    background-color: gold;
     border: 1px solid gray;
+    border-radius: 10px;
 }

@@ -11,7 +11,7 @@ const Doctor = ({ doctor }) => {
             <div className="card doctor-card-design">
                 <img className="card-img" height="300" src={img} alt="" />
 
-                <div className="p-4">
+                <div className="p-4 doctor-card-body">
                     <h2>{name}</h2>
                     <p><small><i className="fas fa-briefcase-medical"></i> {specialist}</small></p>
                     <p className="description"><i className="fas fa-user-md"></i> {description}</p>
@@ -23,7 +23,7 @@ const Doctor = ({ doctor }) => {
 
                     </div>
                     <div className="card-btn">
-                        <Link to={`service/${id}`}><button>Appointment</button></Link>
+                        <Link to={`appointment/${name}`}><button>Appointment</button></Link>
                     </div>
                 </div>
             </div>

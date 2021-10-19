@@ -1,0 +1,27 @@
+
+.docror-description {
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.docror-description h1{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+
+}
+.docror-description h3{
+    padding: 15px;
+
+}
+
+.card-container .specialist{
+    margin-left: 13%;
+    color: blue;
+}
+@media only screen and (max-width:540px) {
+    .docror-description {
+        margin-top: 30px;
+        width: 90%;
+    }
+}

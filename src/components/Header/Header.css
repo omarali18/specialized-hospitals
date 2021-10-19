@@ -35,6 +35,10 @@
     }
     
 }
+.userName{
+    color: rgb(138, 209, 138);
+    padding-right: 10px;
+}
 @media only screen and (min-width:541px) and (max-width:770px) {
     .nav-container{
         width: 100%;

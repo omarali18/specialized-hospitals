@@ -10,48 +10,59 @@ import Footer from './components/Footer/Footer';
 import Appointment from './components/Appointment/Appointment';
 import About from './components/About/About';
 import Pharmacy from './components/Pharmacy/Pharmacy';
+import Login from './components/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div >
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/doctors">
-            <Header></Header>
-            <Doctors></Doctors>
-            <Footer></Footer>
-          </Route>
-          <Route path="/about">
-            <Header></Header>
-            <About></About>
-            <Footer></Footer>
-          </Route>
-          <Route path="/pharmacy">
-            <Header></Header>
-            <Pharmacy></Pharmacy>
-            <Footer></Footer>
-          </Route>
-          <Route path="/service/:id">
-            <Header></Header>
-            <ServiceDetails></ServiceDetails>
-            <Footer></Footer>
-          </Route>
-          <Route path="/appointment/:name">
-            <Header></Header>
-            <Appointment></Appointment>
-            <Footer></Footer>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/doctors">
+              <Header></Header>
+              <Doctors></Doctors>
+              <Footer></Footer>
+            </Route>
+            <Route path="/about">
+              <Header></Header>
+              <About></About>
+              <Footer></Footer>
+            </Route>
+            <Route path="/pharmacy">
+              <Header></Header>
+              <Pharmacy></Pharmacy>
+              <Footer></Footer>
+            </Route>
+            <Route path="/login">
+              <Header></Header>
+              <Login></Login>
+              <Footer></Footer>
+            </Route>
+            <PrivateRoute path="/service">
+              <Header></Header>
+              <ServiceDetails></ServiceDetails>
+              <Footer></Footer>
+            </PrivateRoute>
+            <PrivateRoute path="/appointment/:name">
+              <Header></Header>
+              <Appointment></Appointment>
+              <Footer></Footer>
+            </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
+
     </div>
   );
 }

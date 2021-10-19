@@ -1,0 +1,14 @@
+
+
+.img-text-contgainer{
+    width: 250px;
+}
+.img-text{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5PX;
+}
+.card-size div img{
+    width: 313px;
+    height: 350px;
+}

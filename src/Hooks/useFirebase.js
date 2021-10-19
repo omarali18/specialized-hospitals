@@ -13,26 +13,16 @@ const useFirebase = () => {
 
     // google log in function
     const handleGoogleSignIn = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
-            .catch((error) => {
-                setError(error.message);
-            });
+        return signInWithPopup(auth, googleProvider)
+        // .then(result => {
+        //     setUser(result.user);
+        // })
+        // .catch((error) => {
+        //     setError(error.message);
+        // });
     }
 
     // registation function
-    // const handleRegistation = (email, password) => {
-    //     createUserWithEmailAndPassword(auth, email, password)
-    //         .then((result) => {
-    //             setUser(result.user);
-    //             setError("")
-    //         })
-    //         .catch((error) => {
-    //             setError(error.message);
-    //         });
-    // }
     const handleUserRegister = (email, password) => {
         console.log(email, password);
         createUserWithEmailAndPassword(auth, email, password)

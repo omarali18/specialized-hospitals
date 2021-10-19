@@ -1,6 +1,7 @@
 import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
 import React, { useState } from 'react';
 import { isCompositeComponentWithType } from 'react-dom/test-utils';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 import "./Login.css"
 
@@ -10,6 +11,19 @@ const Login = () => {
     const [isLogIn, setIsLogIn] = useState(false)
     const { user, handleGoogleSignIn, handleRegistation, handleLoginByEmailPass, handleUserRegister } = useAuth()
 
+    const location = useLocation()
+    const history = useHistory()
+    const redirect_url = location.state?.from || "/home"
+
+    const googleRedirectLogin = () => {
+        handleGoogleSignIn()
+            .then(result => {
+                history.push(redirect_url)
+            })
+    }
+    // const reditectEmailPss=()=>{
+
+    // }
 
     const handleEmail = (e) => {
         setEmail(e.target.value);
@@ -74,12 +88,8 @@ const Login = () => {
 
                     </form>
                     <div className="row mb-3 pt-3">
-                        <button onClick={handleGoogleSignIn} className=" col-sm-12 btn btn-primary w-50 mx-auto">SignIn by Google</button>
+                        <button onClick={googleRedirectLogin} className=" col-sm-12 btn btn-primary w-50 mx-auto">SignIn by Google</button>
 
-                    </div>
-                    <div className="row mb-3">
-
-                        <button className="col-sm-12 btn btn-primary w-50 mx-auto">SignIn by Google</button>
                     </div>
                 </div>
             </div>

@@ -4,3 +4,12 @@
     background-color: lightgray;
     padding-top: 60px;
 }
+.card-sizeing{
+    width: 75%;
+}
+@media only screen and (max-width:540px) {
+    .card-sizeing{
+        width: 98%;
+    }
+    
+}

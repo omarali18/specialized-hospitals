@@ -38,7 +38,7 @@ const Login = () => {
         console.log(e.target.checked);
 
     }
-
+    // ==========================
     const handleRegister = () => {
         handleUserRegister(email, password);
     };

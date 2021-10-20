@@ -39,7 +39,7 @@ const MenueBar = () => {
                 onClick={() => setIsMobile(!isMobile)}
             >
                 {
-                    isMobile ? <i class="fas fa-times"></i> : <i class="fas fa-bars"></i>
+                    isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>
                 }
             </button>
         </nav>

@@ -1,28 +1,17 @@
-# Getting Started with Create React App
+# Stay healthy with specialized hospitals
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is made with react js [Visit our website](https://specialized-hospital-180b9.web.app/home).
 
-## Available Scripts
+## Welcome to our hospital.
 
-In the project directory, you can run:
+## We have best doctors in this hospital.
 
-### `npm start`
+## We arrange free campaign for poor people.
 
+## We have best diagnostic center.
 
-
-### `npm test`
-
-
-### `npm run build`
+## Our hospital is the best hospital in this country.
 
 
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-## Learn More
 
 

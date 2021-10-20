@@ -9,7 +9,7 @@ const MenueBar = () => {
     return (
         <nav className="navbar">
             {
-                user.email ? <h3>{user.displayName} <i className="fas fa-user"></i></h3> : <h3 className="logo">WELCOME</h3>
+                user.email ? <h3 className="logo"><i className="fas fa-user"></i> {user.displayName} </h3> : <h3 className="logo">WELCOME</h3>
             }
             <ul className={isMobile ? "nav-links-mobile" : "nav-link-container"}
                 onClick={() => setIsMobile(false)}

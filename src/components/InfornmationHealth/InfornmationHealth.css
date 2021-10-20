@@ -1,0 +1,13 @@
+
+
+.information-title, .information-detail, .information-detail p a{
+    color: #013A5D;
+
+}
+
+.information-detail .p-ancor{
+    border-left: 2px solid cornflowerblue;
+    padding-left: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

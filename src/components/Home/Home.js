@@ -5,6 +5,7 @@ import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
 import "./Home.css"
 import useService from '../../Hooks/useService';
+import InfornmationHealth from '../InfornmationHealth/InfornmationHealth';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <InfornmationHealth />
 
             <Footer />
         </div>

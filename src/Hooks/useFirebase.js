@@ -8,6 +8,7 @@ const googleProvider = new GoogleAuthProvider()
 const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState("")
+    console.log(error);
 
     const auth = getAuth();
 
@@ -24,13 +25,13 @@ const useFirebase = () => {
 
     // registation function
     const handleUserRegister = (email, password) => {
-        console.log(email, password);
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
-                console.log(result.user, "ppppppppppppppppppp");
+                setError('')
             })
             .catch((error) => {
-                const errorMessage = error.message;
+                // setError(error.message)
+                setError("Password should be at least 6 characters")
             });
     }
 
@@ -40,9 +41,10 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user)
+                setError('')
             })
             .catch((error) => {
-                setError(error.message);
+                setError('Please enter a valid email & password.')
             })
     }
 
@@ -64,9 +66,9 @@ const useFirebase = () => {
     }, [])
 
     return {
+        setError,
         user,
         error,
-        // handleRegistation,
         handleUserRegister,
         handleGoogleSignIn,
         handleLoginByEmailPass,

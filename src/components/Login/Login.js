@@ -9,7 +9,7 @@ const Login = () => {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     const [isLogIn, setIsLogIn] = useState(false)
-    const { user, handleGoogleSignIn, handleRegistation, handleLoginByEmailPass, handleUserRegister } = useAuth()
+    const { user, error, handleGoogleSignIn, setError, handleLoginByEmailPass, handleUserRegister } = useAuth()
 
     const location = useLocation()
     const history = useHistory()
@@ -26,16 +26,26 @@ const Login = () => {
     // }
 
     const handleEmail = (e) => {
-        setEmail(e.target.value);
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.value)) {
+            setEmail(e.target.value);
+            setError('')
+        }
+        else {
+            setError('Please enter a valid email.')
+        }
+
 
     }
     const handlePassword = (e) => {
+        if (e.target.value < 7) {
+            setError("please enter password minimum 7 didi")
+        }
         setPassword(e.target.value);
 
     }
     const toggleLogin = (e) => {
         setIsLogIn(e.target.checked)
-        console.log(e.target.checked);
+        setError('')
 
     }
     // ==========================
@@ -44,10 +54,8 @@ const Login = () => {
     };
     const hanldeLogin = () => {
         handleLoginByEmailPass(email, password)
+
     }
-    // const handleSingUp = () => {
-    //     handleRegistation(email, password)
-    // }
     const handleFormReload = e => {
         e.preventDefault()
     }
@@ -63,11 +71,13 @@ const Login = () => {
                     <form onSubmit={handleFormReload}>
                         <div className="row mb-3">
                             <div className="col-sm-12">
-                                <input onChange={handleEmail} type="email" placeholder="Email" className="form-control w-75 mx-auto input-field" id="inputEmail3" />
+                                <small className="text-danger">{error}</small>
+                                <input onBlur={handleEmail} type="email" placeholder="Email" className="form-control w-75 mx-auto input-field" id="inputEmail3" />
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="col-sm-12">
+
                                 <input onChange={handlePassword} type="password" placeholder="Password" className="form-control w-75 mx-auto input-field" id="inputPassword3" />
                             </div>
                         </div>
@@ -77,18 +87,18 @@ const Login = () => {
                                 <div className="form-check">
                                     <input onChange={toggleLogin} className="" type="checkbox" id="gridCheck" />
                                     <label className="form-check-label p-2 text-light" htmlFor="gridCheck">
-                                        Already registard
+                                        {!isLogIn ? "New user?" : "Already registard"}
                                     </label>
                                 </div>
                             </div>
                         </div>
                         {
-                            !isLogIn ? <button onClick={hanldeLogin} type="submit" className="btn btn-primary w-50 mt-3">Log in</button> : <button onClick={handleRegister} type="submit" className="btn btn-primary w-50 mt-3">Registation</button>
+                            !isLogIn ? <button onClick={hanldeLogin} type="submit" className="btn btn-primary w-50 mt-3 login-register">Log in</button> : <button onClick={handleRegister} type="submit" className="btn btn-primary w-50 mt-3 login-register">Registation</button>
                         }
 
                     </form>
                     <div className="row mb-3 pt-3">
-                        <button onClick={googleRedirectLogin} className=" col-sm-12 btn btn-primary w-50 mx-auto">SignIn by Google</button>
+                        <button onClick={googleRedirectLogin} className=" col-sm-12 btn btn-primary w-50 mx-auto btn-bg-color">SignIn by Google</button>
 
                     </div>
                 </div>

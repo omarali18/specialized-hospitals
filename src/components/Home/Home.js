@@ -6,6 +6,7 @@ import Services from '../Services/Services';
 import "./Home.css"
 import useService from '../../Hooks/useService';
 import InfornmationHealth from '../InfornmationHealth/InfornmationHealth';
+import MenueBar from '../MenueBar/MenueBar';
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
 
     return (
         <div>
+            <MenueBar />
             <Banner />
             <Covid />
             <div className="card-container">

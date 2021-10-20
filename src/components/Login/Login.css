@@ -35,3 +35,9 @@
 .checkbox-lebel{
     padding-left: 0px;
 }
+.login-register{
+    background: linear-gradient(to left,#FF5DE1,#FF00C6);
+}
+.btn-bg-color{
+    background: linear-gradient(to left,#33A852,#F9BB08);
+}

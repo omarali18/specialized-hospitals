@@ -22,7 +22,7 @@ const Doctors = () => {
             </div>
             <div className="card-container">
                 <h2 className='specialist'><i className="fas fa-hospital-user"></i> Our specialist.</h2><br />
-                <div className="row w-75 mx-auto">
+                <div className="row mx-auto card-sizeing">
                     {
                         doctors.map(doctor => <Doctor
                             key={doctor.id}

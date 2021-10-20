@@ -4,7 +4,7 @@ import "./ServiceDetails.css"
 const ServiceDetails = () => {
 
     return (
-        <div className=" w-75 mx-auto mb-5 mt-5">
+        <div className=" mx-auto mb-5 mt-5 categori-container">
             <h1 className="text-center">Top Categories</h1>
             <div className="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
                 <div className="col card-size">

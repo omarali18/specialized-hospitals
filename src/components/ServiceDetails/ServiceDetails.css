@@ -1,5 +1,7 @@
 
-
+.categori-container{
+    width: 75%;
+}
 .img-text-contgainer{
     width: 250px;
 }
@@ -10,4 +12,9 @@
 }
 .card-size div img{
     height: 350px;
+}
+@media only screen and (max-width:540px) {
+    .categori-container{
+        width: 85%;
+    }
 }

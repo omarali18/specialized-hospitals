@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import Doctors from './components/Doctors/Doctors';
-import Header from './components/Header/Header';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
@@ -13,6 +12,7 @@ import Pharmacy from './components/Pharmacy/Pharmacy';
 import Login from './components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MenueBar from './components/MenueBar/MenueBar';
 
 function App() {
   return (
@@ -27,34 +27,34 @@ function App() {
               <Home></Home>
             </Route>
             <Route path="/doctors">
-              <Header></Header>
+              <MenueBar></MenueBar>
               <Doctors></Doctors>
               <Footer></Footer>
             </Route>
             <Route path="/about">
-              <Header></Header>
+              <MenueBar></MenueBar>
               <About></About>
               <Footer></Footer>
             </Route>
             <Route path="/pharmacy">
-              <Header></Header>
+              <MenueBar></MenueBar>
               <Pharmacy></Pharmacy>
               <Footer></Footer>
             </Route>
             <Route path="/login">
-              <Header></Header>
+              <MenueBar></MenueBar>
               <Login></Login>
               <Footer></Footer>
             </Route>
             <PrivateRoute path="/service">
-              <Header></Header>
+              <MenueBar></MenueBar>
               <ServiceDetails></ServiceDetails>
               <Footer></Footer>
             </PrivateRoute>
             <PrivateRoute path="/appointment/:name">
-              <Header></Header>
+              <MenueBar></MenueBar>
               <Appointment></Appointment>
-              <Footer></Footer>
+              <MenueBar></MenueBar>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

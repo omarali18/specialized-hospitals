@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import useService from '../../Hooks/useService';
 import "./ServiceDetails.css"
 
 const ServiceDetails = () => {
+    const id = useParams()
+    const { services } = useService()
+    console.log(id, "this is service", services);
 
     return (
         <div className=" mx-auto mb-5 mt-5 categori-container">

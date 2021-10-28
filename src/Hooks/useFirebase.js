@@ -5,6 +5,7 @@ import initializeAuthentication from "../Firebase/firebaseInit";
 initializeAuthentication()
 const googleProvider = new GoogleAuthProvider()
 
+
 const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState("")
@@ -24,23 +25,25 @@ const useFirebase = () => {
     }
 
     // registation function
-    const handleUserRegister = (email, password) => {
+    const handleUserRegister = (email, password, history, redirect_url) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 setError('')
+                history.push(redirect_url)
             })
             .catch((error) => {
                 // setError(error.message)
-                setError("Password should be at least 6 characters")
+                // setError("Password should be at least 6 characters")
             });
     }
 
     // sign in funcrion
-    const handleLoginByEmailPass = (email, password) => {
+    const handleLoginByEmailPass = (email, password, history, redirect_url) => {
 
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user)
+                history.push(redirect_url)
                 setError('')
             })
             .catch((error) => {

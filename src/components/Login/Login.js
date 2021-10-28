@@ -8,6 +8,7 @@ import "./Login.css"
 const Login = () => {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    // const[passError, setPasserror] = useState("")
     const [isLogIn, setIsLogIn] = useState(false)
     const { user, error, handleGoogleSignIn, setError, handleLoginByEmailPass, handleUserRegister } = useAuth()
 
@@ -20,27 +21,37 @@ const Login = () => {
             .then(result => {
                 history.push(redirect_url)
             })
+            .catch(error => {
+                console.log(error.message);
+            })
     }
-    // const reditectEmailPss=()=>{
-
-    // }
 
     const handleEmail = (e) => {
+
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.value)) {
             setEmail(e.target.value);
             setError('')
         }
         else {
-            setError('Please enter a valid email.')
+            if (e.target.value === "") {
+                setError("")
+            }
+            else {
+                setError('Please enter a valid email.')
+            }
         }
 
 
     }
     const handlePassword = (e) => {
-        if (e.target.value < 7) {
-            setError("please enter password minimum 7 didi")
+        if (e.target.value === "") {
+            setError("")
         }
-        setPassword(e.target.value);
+        else {
+
+            setPassword(e.target.value);
+        }
+
 
     }
     const toggleLogin = (e) => {
@@ -50,10 +61,28 @@ const Login = () => {
     }
     // ==========================
     const handleRegister = () => {
-        handleUserRegister(email, password);
+        // if (password < 8) {
+        //     console.log('naikjsdklfjdsl');
+        //     setError("Password must be length of 8.")
+        //     return
+        // }
+        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+            setError("password must be 2 uppercase letters.")
+            // return
+        }
+        // else if (!/(?=.*[!@#$&*])/.test(password)) {
+        //     setError("password must be 1 special case letter.")
+        //     return
+        // }
+        else {
+            handleUserRegister(email, password, history, redirect_url);
+        }
+        // history.push(redirect_url)
     };
     const hanldeLogin = () => {
-        handleLoginByEmailPass(email, password)
+
+
+        handleLoginByEmailPass(email, password, history, redirect_url)
 
     }
     const handleFormReload = e => {

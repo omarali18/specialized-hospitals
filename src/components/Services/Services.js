@@ -14,7 +14,7 @@ const Services = ({ service }) => {
                     <h2>{name}</h2>
                     <p className="description">{description}</p>
                     <div className="card-btn">
-                        <Link to="/service"><button>Details</button></Link>
+                        <Link to={`/service/${id}`}><button>Details</button></Link>
                     </div>
                 </div>
             </div>

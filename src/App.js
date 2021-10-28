@@ -46,7 +46,7 @@ function App() {
               <Login></Login>
               <Footer></Footer>
             </Route>
-            <PrivateRoute path="/service">
+            <PrivateRoute path="/service/:id">
               <MenueBar></MenueBar>
               <ServiceDetails></ServiceDetails>
               <Footer></Footer>
